@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alumnos</title>
+</head>
+<body>
+    <h1>Gestión de Alumnos</h1>
+    
+    <!-- Formulario para agregar un alumno -->
+    <h2>Agregar Alumno</h2>
+    <form action="nexo_poo_foto.php" method="post" enctype="multipart/form-data">
+        <label for="legajo">Legajo:</label>
+        <input type="text" id="legajo" name="legajo" required><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/jpeg"><br>
+
+        <input type="hidden" name="accion" value="agregar">
+        <input type="submit" value="Agregar Alumno">
+    </form>
+
+    <!-- Formulario para listar todos los alumnos -->
+    <h2>Listar Alumnos</h2>
+    <form action="nexo_poo_foto.php" method="get">
+        <input type="hidden" name="accion" value="listar">
+        <input type="submit" value="Listar Alumnos">
+    </form>
+
+    <!-- Formulario para verificar la existencia de un alumno por legajo -->
+    <h2>Verificar Alumno por Legajo</h2>
+    <form action="nexo_poo_foto.php" method="post">
+        <label for="legajo_verificar">Legajo:</label>
+        <input type="text" id="legajo_verificar" name="legajo" required><br>
+
+        <input type="hidden" name="accion" value="verificar">
+        <input type="submit" value="Verificar Alumno">
+    </form>
+
+    <!-- Formulario para actualizar un alumno por legajo -->
+    <h2>Actualizar Alumno por Legajo</h2>
+    <form action="nexo_poo_foto.php" method="post">
+        <label for="legajo_actualizar">Legajo:</label>
+        <input type="text" id="legajo_actualizar" name="legajo" required><br>
+
+        <label for="nombre_actualizar">Nombre:</label>
+        <input type="text" id="nombre_actualizar" name="nombre" required><br>
+
+        <label for="apellido_actualizar">Apellido:</label>
+        <input type="text" id="apellido_actualizar" name="apellido" required><br>
+
+        <input type="hidden" name="accion" value="modificar">
+        <input type="submit" value="Actualizar Alumno">
+    </form>
+
+    <!-- Formulario para borrar un alumno por legajo -->
+    <h2>Borrar Alumno por Legajo</h2>
+    <form action="nexo_poo_foto.php" method="post">
+        <label for="legajo_borrar">Legajo:</label>
+        <input type="text" id="legajo_borrar" name="legajo" required><br>
+
+        <input type="hidden" name="accion" value="borrar">
+        <input type="submit" value="Borrar Alumno">
+    </form>
+
+    <!-- Formulario para obtener un alumno por legajo -->
+    <h2>Obtener Alumno por Legajo</h2>
+    <form action="nexo_poo_foto.php" method="post">
+        <label for="legajo_obtener">Legajo:</label>
+        <input type="text" id="legajo_obtener" name="legajo" required><br>
+
+        <input type="hidden" name="accion" value="obtener">
+        <input type="submit" value="Obtener Alumno">
+    </form>
+
+    <!-- Formulario para redirigir a la página principal -->
+    <h2>Redirigir a la Página Principal</h2>
+    <form action="nexo_poo_foto.php" method="post">
+        <label for="legajo_redirigir">Legajo:</label>
+        <input type="text" id="legajo_redirigir" name="legajo" required><br>
+
+        <input type="hidden" name="accion" value="redirigir">
+        <input type="submit" value="Redirigir a la Página Principal">
+    </form>
+</body>
+</html>

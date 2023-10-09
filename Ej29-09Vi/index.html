@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>CRUD - AJAX - JQUERY</title>
+
+    <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- AGREGO LA LIBRERIA DE JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- AGREGO FUNCIONES PROPIAS CON USO DE JQUERY -->
+    <script type="text/javascript" src="./funciones.js"></script>
+
+</head>
+<body>
+
+    <table class="table table-light">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="2">ALTA - PRODUCTOS - AJAX - JQUERY</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>CÓDIGO</td>
+                <td><input type="number" name="" id="codigo"></td>
+            </tr>
+            <tr>
+                <td>MARCA</td>
+                <td><input type="text" name="" id="marca"></td>
+            </tr>
+            <tr>
+                <td>PRECIO</td>
+                <td><input type="number" name="" id="precio"></td>
+            </tr>
+            <tr>
+                <td>FOTO</td>
+                <td><input type="file" name="" id="foto"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" onclick="Agregar()">Agregar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>LISTAR - PRODUCTOS - AJAX - JQUERY</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td><button type="submit" onclick="Listar()">Listar</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset >
+                        <legend >Listado de productos</legend>
+                        <div id="divListado">
+
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th colspan="2">MODIFICACIÓN - PRODUCTOS - AJAX - JQUERY</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>CÓDIGO</td>
+                <td><input type="number" name="" id="codigo_m" ></td>
+            </tr>
+            <tr>
+                <td>MARCA</td>
+                <td><input type="text" name="" id="marca_m"></td>
+            </tr>
+            <tr>
+                <td>PRECIO</td>
+                <td><input type="number" name="" id="precio_m"></td>
+            </tr>
+            <tr>
+                <td>FOTO</td>
+                <td><input type="file" name="" id="foto_m"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" onclick="Modificar()">Modificar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table table-light">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="2">BORRAR - PRODUCTOS - AJAX - JQUERY</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>CÓDIGO</td>
+                <td><input type="number" name="" id="codigo_b" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" onclick="Borrar()">Borrar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    
+    <br>
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>LISTAR - PRODUCTOS - TABLA-FRONTEND - AJAX - JQUERY</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td><button type="submit" onclick="ArmarTablaObjetos()">Listar</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset >
+                        <legend >Listado de productos</legend>
+                        <div id="divListado_tabla_json">
+
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

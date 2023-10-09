@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/jquery": "^3.5.20",
+    "express-myconnection": "^1.0.4"
+  }
+}

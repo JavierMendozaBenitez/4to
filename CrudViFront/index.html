@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alumnos</title>
+    <script src="js/funciones.js"></script>
+    
+</head>
+<body>
+    <h1>Gestión de Alumnos</h1>
+    
+    <!-- Formulario para agregar un alumno -->
+    <h2>Agregar Alumno</h2>
+    <form>
+        <label for="legajo">Legajo:</label>
+        <input type="text" id="legajo" name="legajo" required><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/jpeg"><br>
+
+        <input type="button" value="Agregar Alumno" onclick="agregarAlumno()">
+    </form>
+
+    <!-- Formulario para listar todos los alumnos -->
+    <h2>Listar Alumnos</h2>
+    <form>
+        <input type="button" value="Listar Alumnos" onclick="listarAlumnos()">
+    </form>
+
+    <!-- Formulario para verificar la existencia de un alumno por legajo -->
+    <h2>Verificar Alumno por Legajo</h2>
+    <form>
+        <label for="legajo_verificar">Legajo:</label>
+        <input type="text" id="legajo_verificar" required><br>
+
+        <input type="button" value="Verificar Alumno" onclick="verificarAlumno()">
+    </form>
+
+    <!-- Formulario para actualizar un alumno por legajo -->
+    <h2>Actualizar Alumno por Legajo</h2>
+    <form>
+        <label for="legajo_actualizar">Legajo:</label>
+        <input type="text" id="legajo_actualizar" required><br>
+
+        <label for="nombre_actualizar">Nombre:</label>
+        <input type="text" id="nombre_actualizar" required><br>
+
+        <label for="apellido_actualizar">Apellido:</label>
+        <input type="text" id="apellido_actualizar" required><br>
+
+        <input type="button" value="Actualizar Alumno" onclick="actualizarAlumno()">
+    </form>
+
+    <!-- Formulario para borrar un alumno por legajo -->
+    <h2>Borrar Alumno por Legajo</h2>
+    <form>
+        <label for="legajo_borrar">Legajo:</label>
+        <input type="text" id="legajo_borrar" required><br>
+
+        <input type="button" value="Borrar Alumno" onclick="borrarAlumno()">
+    </form>
+
+    <!-- Formulario para obtener un alumno por legajo -->
+    <h2>Obtener Alumno por Legajo</h2>
+    <form>
+        <label for="legajo_obtener">Legajo:</label>
+        <input type="text" id="legajo_obtener" required><br>
+
+        <input type="button" value="Obtener Alumno" onclick="obtenerAlumno()">
+    </form>
+
+    <!-- Formulario para redirigir a la página principal -->
+    <h2>Redirigir a la Página Principal</h2>
+    <form>
+        <label for="legajo_redirigir">Legajo:</label>
+        <input type="text" id="legajo_redirigir" required><br>
+
+        <input type="button" value="Redirigir a la Página Principal" onclick="redirigirPrincipal()">
+    </form>
+    
+    <!-- Formulario para listar todos los alumnos como objetos -->
+    <h2>Listar Alumnos como Objetos</h2>
+    <form>
+        <input type="button" value="Listar Alumnos como Objetos" onclick="listarAlumnosObjetos()">
+    </form>
+    <!-- Formulario para listar todos los alumnos como objetos con sus fotos -->
+    <h2>Listar Alumnos como Tabla</h2>
+    <form>
+        <input type="button" value="Listar Alumnos como Tabla" onclick="listarAlumnosTabla()">
+    </form>
+
+    <!-- Agrega un contenedor con un ID para mostrar la tabla -->
+    <div id="tablaContainer"></div>
+    
+</body>
+</html>

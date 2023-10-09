@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Alumnos</title>
+</head>
+<body>
+    <h1>Formulario de Alumnos</h1>
+    <form action="nexo.php" method="POST">
+        <input type="hidden" name="accion" value="agregar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required><br>
+        <label for="legajo">Legajo:</label>
+        <input type="text" name="legajo" id="legajo" required><br>
+        <input type="submit" value="Agregar Alumno">
+    </form>
+</body>
+</html>
