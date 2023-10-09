@@ -1,0 +1,14 @@
+https://xdebug.org/wizard
+
+[XDebug]
+
+zend_extension = xdebug
+
+xdebug.mode = debug
+xdebug.start_with_request = yesyeszend_extension = xdebug
+
+
+
+Para agregar espacio
+
+&nbsp;

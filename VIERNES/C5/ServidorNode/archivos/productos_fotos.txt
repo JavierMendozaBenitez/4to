@@ -1,0 +1,2 @@
+{"codigo":"1","marca":"Polo","precio":"22","path":"fotos/1.jpeg"},
+{"codigo":"2","marca":"Polopolo","precio":"66","path":"fotos/2.jpeg"},

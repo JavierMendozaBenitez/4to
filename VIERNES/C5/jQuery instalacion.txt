@@ -1,0 +1,9 @@
+npm install -g @types/jquery
+npm install --save @types/jquery
+
+Esto en el node, en el servidor
+npm install cors
+npm install multer
+
+Para correr el server
+node servidor_node

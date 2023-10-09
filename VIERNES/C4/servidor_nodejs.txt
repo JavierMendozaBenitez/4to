@@ -1,0 +1,20 @@
+"servidor_nodejs" : {
+		"scope": "typescript",
+		"prefix": "snjs",
+		"body": [
+			"const express = require('express');",
+			"",
+			"const app = express();",
+			"",
+			"app.set('puerto', $1);",
+			"",
+			"app.get('/', (request:any, response:any)=>{",
+			"\tresponse.send('GET - servidor NodeJS');",
+			"});",
+			"",
+			"",
+			"app.listen(app.get('puerto'), ()=>{",
+			"\tconsole.log('Servidor corriendo sobre puerto:', app.get('puerto'));",
+			"});"
+		],
+		"description": "Creación de servidor NodeJS"

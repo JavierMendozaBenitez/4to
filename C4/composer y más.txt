@@ -1,0 +1,21 @@
+
+composer -v Se fija si esta instalado
+
+packagist.org
+
+getcomposer.org
+
+
+Danilo Vukosich10:52
+profe, a varios nos tira un error
+The php.ini used by your command-line PHP is: C:\xampp\php\php.ini
+
+A duplicate setting in your php.ini could be causing the problem.
+
+Program Output:
+Cannot load Xdebug - it was already loaded
+Kevin Veliz10:56
+C:\xampp\php\windowsXamppPhp\php.exe
+
+
+composer update --ignore-platform-req=ext-gd

@@ -1,0 +1,34 @@
+app.put('/productos', (request:any, response:any)=>{   
+    let obj = request.body;
+
+    fs.readFile(path_archivo, "UTF-8", (err:any, contenido:any) => {
+        if (err) {
+            throw ("Error al leer el archivo.");
+        }
+
+        let array = contenido.split(",\r\n");
+        let productosString = "";
+
+        array.forEach((item:any) => {
+            if (item != "" && item != undefined) {
+                let itemObj = JSON.parse(item);
+
+                if (itemObj.codigo == obj.codigo) {
+                    itemObj.marca = obj.marca;
+                    itemObj.precio = obj.precio;
+                }
+
+                productosString += JSON.stringify(itemObj) + ",\r\n";
+            }
+        });
+
+        fs.writeFile(path_archivo, productosString, (err:any) => {
+            if (err) {
+                throw ("Error al escribir el archivo.");
+            }
+
+            console.log("Archivo escrito exitosamente.");
+            response.send("Archivo escrito exitosamente.");
+        });
+    });
+});
