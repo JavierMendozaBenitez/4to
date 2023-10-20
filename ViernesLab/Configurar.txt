@@ -1,0 +1,43 @@
+Creas una carpeta
+
+Dentro de esa carpeta vas a Terminal -> nueva terminal y elegis powershell u otra
+
+tsc -v ves la versión de TypeScript
+
+tsc -init crea el tsconfig.json (debe estar en el raíz) q es el archivo de configuración q le descomentas // "sourceMap": true, 
+
+
+
+Creas el archivo.ts
+
+Terminal -> nueva terminal
+Si no entra a la sub carpeta deseada escribis cd Ej02 y te deberia quedar asi:
+PS C:\Users\Javier\Documents\TUP\CC 08-23\Lb III Vi 23\Ejercicios> cd Ej02
+
+Luego en la terminal escribis tsc ejercicioUno y te crea el javaScript, podes escribirlo con o sin .ts
+
+
+Para el Debugg
+
+Terminal -> Ejecutar tarea de compilación, elegis tu .ts compilar, tocar cualquier tecla y te crea el js.map
+
+Abrir el menú de de depuración:
+●    Ver -> Ejecutar (Ctrl + Shift + D)
+O pulsar el ícono de la barra de actividades
+
+Elegís crear launch.json -> node.js -> agregar configuración -> Node.js: Iniciar programa -> cambias app.js por tu archivo archivo.js -> ctrl + s 
+se guarda en una carpeta .vscode
+
+Luego cada vez q cambies algo en .ts tenes q ir a Terminal -> Ejecutar tarea de compilación, tocar cualquier tecla y te Transpila el ts para que aparezca en el .js
+
+
+Juntar todos los archivos
+en el main.ts
+terminal -> tsc --outFile namespace/app.js namespace/02_auto namespace/03_main namespace/01_vehiculo
+namespace/app.js es el archivo de salida, es el q se va a generar, no existe aún
+namespace/02_auto namespace/03_main namespace/01_vehiculo esto combina y ordena estos archivos, los transpila
+escribiendo namespace le indicas a donde ir, sino deberías poner cd
+Te crea un app.js y podes debugguearlo ahí o usar un index.html
+
+
+

@@ -1,0 +1,23 @@
+Subir archivos
+
+Entras a la carpeta clonada que tiene que tener una carpeta .git y manteniendo apreta shift+clic derecho abrir ventana de powershell aquí.
+
+git status
+git add .
+git commit -m "18-09-2022"
+git push
+
+Clonar una carpeta de otro git
+
+Elegís una carpeta, vas a git, al repositorio que quieras clonar y le das a Fork, vas a tu repositorio y vas a Clone, seleccionas el link, abris el powerShell en la carpeta que elegíste, escribis 
+git clone pegas la dirección que copiaste enter 
+Aparecera la carpeta clonada.
+
+Haces algun cambio en el codigo para que el cambio aparezca en git, vas al powerShell y escribis la carpeta del codigo
+
+
+Básicamente:
+git status => ver los cambios hechos antes del úlitimo commit
+git add . => agrego todos los cambios a un nuevo commit
+git commit -m "mensaje" => genero el mensaje que va a tener el commit cuando suba el código
+git push => subo el código al repositorio

@@ -1,0 +1,106 @@
+Esta libreria permite conectarse a un motor de base tipo mysql. Hacerlo en el servidor_node.ts
+
+npm install -S mysql express-myconnection
+
+
+Una vez que hiciste el codigo para la conexión lo podes probar en el thunder con GET http://localhost:10000/test-conexion en Query -> send
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"codigo":"1","marca":"Polo","precio":"22","path":"http://localhost:10000/fotos/1.jpeg"},
+{"codigo":"2","marca":"Polopolo","precio":"66","path":"http://localhost:10000/fotos/2.jpeg"}
+
+
+{"codigo":"1","marca":"Polo","precio":"22","path":"fotos/1.jpeg"},
+{"codigo":"2","marca":"Polopolo","precio":"66","path":"fotos/2.jpeg"},
+
+
+
+// function ArmarTablaObjetos(){
+//     let url = "http://localhost:10000/productos_fotos";
+//     $.ajax({
+//         type:"get",
+//         url: url,
+//         dataType: "JSON",
+//     })
+//     .done((objJSON:any)=>{
+//         // MUESTRO EL RESULTADO DE LA PETICION
+//         console.log(objJSON);
+//         //alert(objJSON);
+
+//         // Crea una tabla HTML
+//         let tabla = $("<table>");
+
+//         // Agrega encabezados a la tabla
+//         tabla.append("<thead><tr><th>Código</th><th>Marca</th><th>Precio</th><th>1Foto</th></tr></thead>");
+
+//         // Crea el cuerpo de la tabla
+//         let tbody = $("<tbody>");
+
+
+//         objJSON.forEach((elemento:any) => {
+//             // if(elemento !== ""){
+//             // // Crea una fila en la tabla
+//             // let obj = JSON.parse(elemento);
+//             // let fila = $("<tr>");
+//             // // Agrega las celdas de datos a la fila
+//             // // fila.append(`<td>${obj.codigo}</td>`);
+//             // // fila.append(`<td>${obj.marca}</td>`);
+//             // // fila.append(`<td>${obj.precio}</td>`);
+            
+//             // // fila.append(`<td>${obj.path}</td>`);
+//             // // fila.append(`<td><img src="${obj.path}" alt="1Foto del producto"></td>`);
+//             // // fila.append(`<td><img src="fotos/${obj.path}" alt="2Foto del producto"></td>`);
+//             // // fila.append(`<td><img src="public/fotos/${obj.path}" alt="3Foto del producto"></td>`);
+//             // // fila.append(`<td><img src="public/${obj.path}" alt="4Foto del producto"></td>`);
+
+
+//             // // Agrega la fila al cuerpo de la tabla
+//             // tbody.append(fila);
+//             // }
+//         });
+
+//         // Agrega el cuerpo de la tabla a la tabla
+//         tabla.append(tbody);
+
+//         // Obtén el elemento con el id "divListado_tabla_json"
+//         let divListadoTablaJson = document.getElementById("divListado_tabla_json");
+
+//         // Verifica si el elemento existe antes de asignarle el contenido HTML
+//         if (divListadoTablaJson) {
+//             divListadoTablaJson.innerHTML = tabla[0].outerHTML; // Aquí se asigna el contenido HTML correctamente
+//         } else {
+//             console.error("Elemento 'divListado_tabla_json' no encontrado.");
+//         }
+//     })
+//     .fail(function (jqXHR:any, textStatus:any, errorThrown:any) {
+//         alert(jqXHR.responseText + "\n" + textStatus + "\n" + errorThrown);
+//     }); 
+// }

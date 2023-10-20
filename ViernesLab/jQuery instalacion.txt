@@ -1,0 +1,20 @@
+esto en el front no en el servidor
+
+npm install -g @types/jquery
+Generas las dependencias para usarlo en nuestro proyecto
+npm install --save @types/jquery
+Te genera el node_modules
+
+Luego generas el tsconfig.json con tsc --init y deshabilitas el "sourceMap" : true, linea 55
+
+Despues debes referenciar el node_module, si está en el mismo lugar escribir en la parte de arriba del .ts /// <reference path="./node_modules/@types/jquery/index.d.ts"
+
+Luego en Listar colocar bien el puerto e ir al servidor_node y ejecutar node servidor_node esto hace correr sobre el puerto elegido, deben coincidir
+
+
+En el servidor ejecutar estos comandos
+npm install cors
+npm install multer
+
+Para correr el server
+node servidor_node

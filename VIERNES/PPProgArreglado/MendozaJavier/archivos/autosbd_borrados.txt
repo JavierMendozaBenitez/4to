@@ -1,0 +1,73 @@
+
+
+Patente: abc123
+Marca: fiat
+Color: blanco
+Precio: 100555
+Nueva ubicación de la foto: ../autosBorrados/abc123.borrado.014045.jpg
+
+Patente: abc123
+Marca: fiat
+Color: blanco
+Precio: 100555
+Nueva ubicación de la foto: ../autosBorrados/abc123.borrado.014259.jpg
+
+Patente: abc1234
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1234.borrado.014328.jpg
+
+Patente: abc1234
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1234.borrado.133525.jpg
+
+Patente: abc1234
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1234.borrado.155226.jpg
+
+Patente: abc1235
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1235.borrado.155235.jpg
+
+Patente: abc1236
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1236.borrado.155240.jpg
+
+Patente: abc1237
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1237.borrado.155245.jpg
+
+Patente: abc1238
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1238.borrado.155251.jpg
+
+Patente: abc1239
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1239.borrado.155255.jpg
+
+Patente: abc1230
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc1230.borrado.155300.jpg
+
+Patente: abc12300
+Marca: fiat4
+Color: blanco4
+Precio: 100554
+Nueva ubicación de la foto: ../autosBorrados/abc12300.borrado.155304.jpg
